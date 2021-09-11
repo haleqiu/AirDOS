@@ -1,2 +1,2 @@
 # AirDOS
-This work is a dynamic object slam work
+The code will be released soon.
