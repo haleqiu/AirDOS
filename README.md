@@ -1,5 +1,8 @@
 # AirDOS: Dynamic SLAM benefits from Articulated Objects
 
+[![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-yellow.svg)](./LICENSE)
+[![Air Series](https://img.shields.io/badge/collection-Air%20Series-b31b1b)](https://chenwang.site/airseries/)
+
 ![tartanair](https://github.com/haleqiu/AirDOS-dev/assets/22726519/d616e062-28fe-474a-8254-a218a9da3a83)
 
 
@@ -9,7 +12,7 @@
 
 # Instruction
 
-## Prerequest
+## Dependencies
 
 * Eigen (Tested on v3.3)
 * OpenCV (Tested on Opencv 3.4)
@@ -19,20 +22,9 @@
 
 Run the `./build.sh` in root directory to build third party libraries, AirDOS and construct a binary representation of ORB vocabulary file.
 
+## Run an example script
+
 Currently, the project only supports `Stereo` mode. The `stereo_human` executable in `Examples/Stereo` 
-
-```bash
-./stereo_human \
-    path_to_vocabulary  \  # Path to ORB Vocabulary in ./Vocabulary
-    path_to_settings    \  # Path to settings in ./Examples/Stereo/config/*.yaml
-    path_to_sequence    \  # Path to input sequence in TartanAir-shibuya dataset
-    path_to_save_trajectory \ # Path to save the camera pose trajectory
-    [path_to_save_map?]    # (Optional) Path to save human keypoints coordinate
-```
-
-You can run with provided scripts in `./Examples/Stereo/scripts` after adapting all the paths in the bash script.
-
-Or you can run directly with the commandline arguments
 
 ```bash
 ./Examples/Stereo/stereo_human \
