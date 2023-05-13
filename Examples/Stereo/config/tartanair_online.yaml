@@ -1,0 +1,93 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+
+# Camera calibration and distortion parameters (OpenCV)
+Camera.fx: 772.5483399593904
+Camera.fy: 772.5483399593904
+Camera.cx: 320.0
+Camera.cy: 180.0
+
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+
+Camera.width: 640
+Camera.height: 360
+
+# Camera frames per second
+Camera.fps: 2.0
+
+# stereo baseline times fx
+Camera.bf: 193.1370849898476
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Close/Far threshold. Baseline times.
+ThDepth: 30
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1500
+
+# ORB Extractor: Scale factor between levels in the scale pyramid
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast
+ORBextractor.iniThFAST: 12
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.2
+Viewer.KeyFrameLineWidth: 2
+Viewer.GraphLineWidth: 1
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.2
+Viewer.CameraLineWidth: 1
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.1
+Viewer.ViewpointZ: -0.1
+Viewer.ViewpointF: 200
+
+Viewer.bVisFrame: 1
+
+#--------------------------------------------------------------------------------------------
+# Whatever path
+#--------------------------------------------------------------------------------------------
+System.IsOffline: 0
+
+Human.OK: 1
+Human.isSeg: 0
+Human.UseTrackedId: 0.8
+
+Optimizer.SigmaStatic: 1
+Optimizer.SigmaHuman: 0.5
+Optimizer.SigmaMotion: 20
+Optimizer.SigmaRigidity: 20
+
+Optimizer.ThHuberMotion: 1
+Optimizer.ThRanSacMotion: 4
+Optimizer.ThRanSacRigidity: 1
+
+Optimizer.IsHuber: 1
+
+# DEBUG
+#--------------------------------------------------------------------------------------------
+# Scheduler
+Schedular.nStartImage: 0
+Schedular.nEndImage: 100
