@@ -22,19 +22,6 @@ Run the `./build.sh` in root directory to build third party libraries, AirDOS an
 Currently, the project only supports `Stereo` mode. The `stereo_kitti_human` executable in `Examples/Stereo` 
 
 ```bash
-./stereo_kitti_human \
-    path_to_vocabulary  \  # Path to ORB Vocabulary in ./Vocabulary
-    path_to_settings    \  # Path to settings in ./Examples/Stereo/config/*.yaml
-    path_to_sequence    \  # Path to input sequence in TartanAir-shibuya dataset
-    path_to_save_trajectory \ # Path to save the camera pose trajectory
-    [path_to_save_map?]    # (Optional) Path to save human keypoints coordinate
-```
-
-You can run with provided scripts in `./Examples/Stereo/scripts` after adapting all the paths in the bash script.
-
-Or you can run directly with the commandline arguments
-
-```bash
 ./Examples/Stereo/stereo_kitti_human \
   ./Vocabulary/ORBvoc.txt \
   ./Examples/Stereo/config/tartanair.yaml \
