@@ -9,7 +9,7 @@
 
 # Instruction
 
-## Prerequest
+## Dependencies
 
 * Eigen (Tested on v3.3)
 * OpenCV (Tested on Opencv 3.4)
@@ -18,6 +18,8 @@
 ## Build
 
 Run the `./build.sh` in root directory to build third party libraries, AirDOS and construct a binary representation of ORB vocabulary file.
+
+## Run an example script
 
 Currently, the project only supports `Stereo` mode. The `stereo_kitti_human` executable in `Examples/Stereo` 
 
