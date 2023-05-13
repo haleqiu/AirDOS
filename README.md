@@ -1,5 +1,5 @@
 # AirDOS: Dynamic SLAM benefits from Articulated Objects
-[![paper](https://img.shields.io/badge/collection-Air%20Series-b31b1b)](https://arxiv.org/abs/2109.09903)
+[![paper]](https://arxiv.org/abs/2109.09903)
 [![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-yellow.svg)](./LICENSE)
 
 ![tartanair](https://github.com/haleqiu/AirDOS-dev/assets/22726519/d616e062-28fe-474a-8254-a218a9da3a83)
