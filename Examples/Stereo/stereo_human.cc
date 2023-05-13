@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 {
     if(argc != 6 && argc != 5)
     {
-      cerr << endl << "Usage: ./stereo_kitti_human path_to_vocabulary path_to_settings path_to_sequence path_to_save_trajectory [path_to_save_map?]" << endl;
+      cerr << endl << "Usage: ./stereo_human path_to_vocabulary path_to_settings path_to_sequence path_to_save_trajectory [path_to_save_map?]" << endl;
       return 1;
     }
 

@@ -19,10 +19,10 @@
 
 Run the `./build.sh` in root directory to build third party libraries, AirDOS and construct a binary representation of ORB vocabulary file.
 
-Currently, the project only supports `Stereo` mode. The `stereo_kitti_human` executable in `Examples/Stereo` 
+Currently, the project only supports `Stereo` mode. The `stereo_human` executable in `Examples/Stereo` 
 
 ```bash
-./stereo_kitti_human \
+./stereo_human \
     path_to_vocabulary  \  # Path to ORB Vocabulary in ./Vocabulary
     path_to_settings    \  # Path to settings in ./Examples/Stereo/config/*.yaml
     path_to_sequence    \  # Path to input sequence in TartanAir-shibuya dataset
@@ -35,7 +35,7 @@ You can run with provided scripts in `./Examples/Stereo/scripts` after adapting 
 Or you can run directly with the commandline arguments
 
 ```bash
-./Examples/Stereo/stereo_kitti_human \
+./Examples/Stereo/stereo_human \
   ./Vocabulary/ORBvoc.txt \
   ./Examples/Stereo/config/tartanair.yaml \
   /.../TartanAir_shibuya/RoadCrossing07 \
