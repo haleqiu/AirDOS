@@ -36,8 +36,6 @@ Currently, the project only supports `Stereo` mode. The `stereo_human` executabl
 
 ## Evaluate Trajectory
 
-To plot the trajectories (in xy, yz, xz views), run `./Evaluation/Plot.py`
-
 For evaluation, please check https://github.com/castacks/tartanair_tools.git.
 
 > Note: the TartanAir Tools expect to read the trajectory format with 7 columns, representing the translation and quaternion.
@@ -45,6 +43,8 @@ For evaluation, please check https://github.com/castacks/tartanair_tools.git.
 > The trajectory exported by the program contains 8 columns, where first column is the timestamp of pose.
 > 
 > To evaluate the exported trajectory using TartanAir Tools, you need to remove the first column of exported trajectory file.
+
+We also provided an evaluation tool based on `evo` package, for more detail, please check this [README.md](Evaluation/README.md).
 
 # Publications
 
