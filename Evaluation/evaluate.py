@@ -26,13 +26,13 @@ SETTINGS.plot_xyz_realistic = args.real_perspective
 est_traj = read_tum_trajectory_file(est_traj_path)
 gt_traj = read_tum_trajectory_file(gt_traj_path)
 
-ape_output = ape(gt_traj, est_traj, pose_relation=PoseRelation.full_transformation, align=True, correct_scale=False)
+ape_output = ape(gt_traj, est_traj, pose_relation=PoseRelation.translation_part, align=True, correct_scale=False)
 rpe_t_output = rpe(gt_traj, est_traj, pose_relation=PoseRelation.translation_part, delta=1.0, delta_unit=Unit.frames,
                  all_pairs=True, align=True, correct_scale=False)
 rpe_r_output = rpe(gt_traj, est_traj, pose_relation=PoseRelation.rotation_part, delta=1.0, delta_unit=Unit.frames,
                  all_pairs=True, align=True, correct_scale=False)
 
-print("APE:", round(ape_output.stats["rmse"], 3))
+print("ATE:", round(ape_output.stats["rmse"], 3))
 print("RPE (Translation)", round(rpe_t_output.stats["rmse"], 3))
 print("RPE (Rotation)", round(rpe_r_output.stats["rmse"], 3))
 
